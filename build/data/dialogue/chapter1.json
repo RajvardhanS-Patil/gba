@@ -1,0 +1,234 @@
+{
+    "chapter": 1,
+    "title": "Memory District",
+    "dialogues": [
+        {
+            "id": "ch1_intro_001",
+            "speaker": "system",
+            "expression": "glitch",
+            "voice": "",
+            "text": "SYSTEM ALERT: Memory sector 7-Alpha experiencing cascading failures.",
+            "next": "ch1_intro_002"
+        },
+        {
+            "id": "ch1_intro_002",
+            "speaker": "system",
+            "expression": "glitch",
+            "voice": "",
+            "text": "Runtime integrity: 34%. Deploying field engineer to sector.",
+            "next": "ch1_kael_wake_001"
+        },
+        {
+            "id": "ch1_kael_wake_001",
+            "speaker": "kael",
+            "expression": "groggy",
+            "voice": "kael_wake_001",
+            "text": "Ugh... my head. What happened?",
+            "next": "ch1_nova_intro_001"
+        },
+        {
+            "id": "ch1_nova_intro_001",
+            "speaker": "nova",
+            "expression": "neutral",
+            "voice": "nova_intro_001",
+            "text": "Good. You're conscious. I was beginning to run out of ways to say 'wake up'.",
+            "next": "ch1_kael_respond_001"
+        },
+        {
+            "id": "ch1_kael_respond_001",
+            "speaker": "kael",
+            "expression": "confused",
+            "voice": "kael_respond_001",
+            "text": "Who are you? And why does everything look... broken?",
+            "next": "ch1_nova_explain_001"
+        },
+        {
+            "id": "ch1_nova_explain_001",
+            "speaker": "nova",
+            "expression": "serious",
+            "voice": "nova_explain_001",
+            "text": "I'm Nova, your assigned AI companion. And 'broken' is putting it mildly. This entire memory sector is corrupted.",
+            "next": "ch1_kael_what_001"
+        },
+        {
+            "id": "ch1_kael_what_001",
+            "speaker": "kael",
+            "expression": "curious",
+            "voice": "kael_what_001",
+            "text": "Corrupted? Like... bad data?",
+            "next": "ch1_nova_data_001"
+        },
+        {
+            "id": "ch1_nova_data_001",
+            "speaker": "nova",
+            "expression": "analytical",
+            "voice": "nova_data_001",
+            "text": "Exactly. The Runtime stores memories in sequences. Think of them as values stored side by side in a row.",
+            "next": "ch1_kael_array_001"
+        },
+        {
+            "id": "ch1_kael_array_001",
+            "speaker": "kael",
+            "expression": "thinking",
+            "voice": "kael_array_001",
+            "text": "Side by side... so if I know which slot I'm looking for, I can go straight to it?",
+            "next": "ch1_nova_array_001"
+        },
+        {
+            "id": "ch1_nova_array_001",
+            "speaker": "nova",
+            "expression": "pleased",
+            "voice": "nova_array_001",
+            "text": "Exactly. Direct access. Instant. But if you don't know where something is...",
+            "next": "ch1_kael_search_001"
+        },
+        {
+            "id": "ch1_kael_search_001",
+            "speaker": "kael",
+            "expression": "realization",
+            "voice": "kael_search_001",
+            "text": "Then I have to check every single one until I find it.",
+            "next": "ch1_nova_search_001"
+        },
+        {
+            "id": "ch1_nova_search_001",
+            "speaker": "nova",
+            "expression": "nodding",
+            "voice": "nova_search_001",
+            "text": "Now you're thinking like a system. The corrupted memory node is somewhere in this sector. We need to find it.",
+            "next": "ch1_quest_start"
+        },
+        {
+            "id": "ch1_quest_start",
+            "speaker": "nova",
+            "expression": "determined",
+            "voice": "nova_quest_001",
+            "text": "Start searching. Check the memory nodes. The corrupted one will feel... wrong.",
+            "action": "start_quest_find_memory",
+            "next": ""
+        },
+        {
+            "id": "ch1_memory_found",
+            "speaker": "nova",
+            "expression": "serious",
+            "voice": "nova_memory_found",
+            "text": "You found it. See how you had to check each node? That's a linear search.",
+            "next": "ch1_kael_linear_001"
+        },
+        {
+            "id": "ch1_kael_linear_001",
+            "speaker": "kael",
+            "expression": "understanding",
+            "voice": "kael_linear_001",
+            "text": "Linear because I went in a straight line through all of them.",
+            "next": "ch1_nova_complexity_001"
+        },
+        {
+            "id": "ch1_nova_complexity_001",
+            "speaker": "nova",
+            "expression": "teaching",
+            "voice": "nova_complexity_001",
+            "text": "Right. In the worst case, you'd check every single memory. The time it takes grows with how many there are.",
+            "next": "ch1_kael_complexity_001"
+        },
+        {
+            "id": "ch1_kael_complexity_001",
+            "speaker": "kael",
+            "expression": "thinking",
+            "voice": "kael_complexity_001",
+            "text": "So more memories means more work. That doesn't sound efficient.",
+            "next": "ch1_nova_complexity_002"
+        },
+        {
+            "id": "ch1_nova_complexity_002",
+            "speaker": "nova",
+            "expression": "smirking",
+            "voice": "nova_complexity_002",
+            "text": "It isn't. But sometimes it's all you've got. Don't worry — we'll learn better methods. Eventually.",
+            "next": "ch1_kael_sarcasm_001"
+        },
+        {
+            "id": "ch1_kael_sarcasm_001",
+            "speaker": "kael",
+            "expression": "sarcastic",
+            "voice": "kael_sarcasm_001",
+            "text": "Eventually. Very reassuring.",
+            "next": "ch1_nova_conclude_001"
+        },
+        {
+            "id": "ch1_nova_conclude_001",
+            "speaker": "nova",
+            "expression": "warm",
+            "voice": "nova_conclude_001",
+            "text": "You've mastered the basics. This sector's memory array is stable now. Let's move deeper.",
+            "action": "unlock_array_core",
+            "next": ""
+        },
+        {
+            "id": "ch1_enemy_intro",
+            "speaker": "nova",
+            "expression": "alert",
+            "voice": "nova_enemy_001",
+            "text": "Wait. Something's wrong. A Memory Eater — it feeds on corrupted data. And it's noticed us.",
+            "next": "ch1_kael_enemy_001"
+        },
+        {
+            "id": "ch1_kael_enemy_001",
+            "speaker": "kael",
+            "expression": "alarmed",
+            "voice": "kael_enemy_001",
+            "text": "Tell me that's not another impossible puzzle.",
+            "next": "ch1_nova_enemy_002"
+        },
+        {
+            "id": "ch1_nova_enemy_002",
+            "speaker": "nova",
+            "expression": "concerned",
+            "voice": "nova_enemy_002",
+            "text": "It isn't impossible.",
+            "next": "ch1_kael_enemy_002"
+        },
+        {
+            "id": "ch1_kael_enemy_002",
+            "speaker": "kael",
+            "expression": "suspicious",
+            "voice": "kael_enemy_002",
+            "text": "You hesitated.",
+            "next": "ch1_nova_enemy_003"
+        },
+        {
+            "id": "ch1_nova_enemy_003",
+            "speaker": "nova",
+            "expression": "deadpan",
+            "voice": "nova_enemy_003",
+            "text": "I was deciding whether to lie. Its memories are stored in an array. Find the vulnerability — search through its data.",
+            "action": "start_combat",
+            "next": ""
+        },
+        {
+            "id": "ch1_victory",
+            "speaker": "kael",
+            "expression": "relieved",
+            "voice": "kael_victory_001",
+            "text": "That was... intense. But the search actually worked.",
+            "next": "ch1_nova_victory_001"
+        },
+        {
+            "id": "ch1_nova_victory_001",
+            "speaker": "nova",
+            "expression": "proud",
+            "voice": "nova_victory_001",
+            "text": "Knowledge is the most dangerous weapon in Eidolon. Remember that.",
+            "next": "ch1_complete"
+        },
+        {
+            "id": "ch1_complete",
+            "speaker": "system",
+            "expression": "success",
+            "voice": "",
+            "text": "ARRAY CORE ACQUIRED. Memory District stabilized. New ability unlocked.",
+            "action": "complete_chapter_1",
+            "next": ""
+        }
+    ]
+}

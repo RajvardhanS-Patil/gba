@@ -1,0 +1,584 @@
+[
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/main.cpp.o -c /home/raj/Documents/oops_game/src/main.cpp",
+  "file": "/home/raj/Documents/oops_game/src/main.cpp",
+  "output": "CMakeFiles/runtime.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/core/Game.cpp.o -c /home/raj/Documents/oops_game/src/core/Game.cpp",
+  "file": "/home/raj/Documents/oops_game/src/core/Game.cpp",
+  "output": "CMakeFiles/runtime.dir/src/core/Game.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/core/SceneManager.cpp.o -c /home/raj/Documents/oops_game/src/core/SceneManager.cpp",
+  "file": "/home/raj/Documents/oops_game/src/core/SceneManager.cpp",
+  "output": "CMakeFiles/runtime.dir/src/core/SceneManager.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/core/EventBus.cpp.o -c /home/raj/Documents/oops_game/src/core/EventBus.cpp",
+  "file": "/home/raj/Documents/oops_game/src/core/EventBus.cpp",
+  "output": "CMakeFiles/runtime.dir/src/core/EventBus.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/core/TimeManager.cpp.o -c /home/raj/Documents/oops_game/src/core/TimeManager.cpp",
+  "file": "/home/raj/Documents/oops_game/src/core/TimeManager.cpp",
+  "output": "CMakeFiles/runtime.dir/src/core/TimeManager.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/core/Config.cpp.o -c /home/raj/Documents/oops_game/src/core/Config.cpp",
+  "file": "/home/raj/Documents/oops_game/src/core/Config.cpp",
+  "output": "CMakeFiles/runtime.dir/src/core/Config.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/entities/Entity.cpp.o -c /home/raj/Documents/oops_game/src/entities/Entity.cpp",
+  "file": "/home/raj/Documents/oops_game/src/entities/Entity.cpp",
+  "output": "CMakeFiles/runtime.dir/src/entities/Entity.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/entities/Character.cpp.o -c /home/raj/Documents/oops_game/src/entities/Character.cpp",
+  "file": "/home/raj/Documents/oops_game/src/entities/Character.cpp",
+  "output": "CMakeFiles/runtime.dir/src/entities/Character.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/entities/Player.cpp.o -c /home/raj/Documents/oops_game/src/entities/Player.cpp",
+  "file": "/home/raj/Documents/oops_game/src/entities/Player.cpp",
+  "output": "CMakeFiles/runtime.dir/src/entities/Player.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/entities/NPC.cpp.o -c /home/raj/Documents/oops_game/src/entities/NPC.cpp",
+  "file": "/home/raj/Documents/oops_game/src/entities/NPC.cpp",
+  "output": "CMakeFiles/runtime.dir/src/entities/NPC.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/entities/Enemy.cpp.o -c /home/raj/Documents/oops_game/src/entities/Enemy.cpp",
+  "file": "/home/raj/Documents/oops_game/src/entities/Enemy.cpp",
+  "output": "CMakeFiles/runtime.dir/src/entities/Enemy.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/world/World.cpp.o -c /home/raj/Documents/oops_game/src/world/World.cpp",
+  "file": "/home/raj/Documents/oops_game/src/world/World.cpp",
+  "output": "CMakeFiles/runtime.dir/src/world/World.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/world/Room.cpp.o -c /home/raj/Documents/oops_game/src/world/Room.cpp",
+  "file": "/home/raj/Documents/oops_game/src/world/Room.cpp",
+  "output": "CMakeFiles/runtime.dir/src/world/Room.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/world/Interactable.cpp.o -c /home/raj/Documents/oops_game/src/world/Interactable.cpp",
+  "file": "/home/raj/Documents/oops_game/src/world/Interactable.cpp",
+  "output": "CMakeFiles/runtime.dir/src/world/Interactable.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/dsa/ArrayDS.cpp.o -c /home/raj/Documents/oops_game/src/dsa/ArrayDS.cpp",
+  "file": "/home/raj/Documents/oops_game/src/dsa/ArrayDS.cpp",
+  "output": "CMakeFiles/runtime.dir/src/dsa/ArrayDS.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/dsa/LinkedList.cpp.o -c /home/raj/Documents/oops_game/src/dsa/LinkedList.cpp",
+  "file": "/home/raj/Documents/oops_game/src/dsa/LinkedList.cpp",
+  "output": "CMakeFiles/runtime.dir/src/dsa/LinkedList.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/dsa/Stack.cpp.o -c /home/raj/Documents/oops_game/src/dsa/Stack.cpp",
+  "file": "/home/raj/Documents/oops_game/src/dsa/Stack.cpp",
+  "output": "CMakeFiles/runtime.dir/src/dsa/Stack.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/dsa/Queue.cpp.o -c /home/raj/Documents/oops_game/src/dsa/Queue.cpp",
+  "file": "/home/raj/Documents/oops_game/src/dsa/Queue.cpp",
+  "output": "CMakeFiles/runtime.dir/src/dsa/Queue.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/dsa/SearchAlgorithms.cpp.o -c /home/raj/Documents/oops_game/src/dsa/SearchAlgorithms.cpp",
+  "file": "/home/raj/Documents/oops_game/src/dsa/SearchAlgorithms.cpp",
+  "output": "CMakeFiles/runtime.dir/src/dsa/SearchAlgorithms.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/dsa/SortAlgorithms.cpp.o -c /home/raj/Documents/oops_game/src/dsa/SortAlgorithms.cpp",
+  "file": "/home/raj/Documents/oops_game/src/dsa/SortAlgorithms.cpp",
+  "output": "CMakeFiles/runtime.dir/src/dsa/SortAlgorithms.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/dsa/ComplexityAnalyzer.cpp.o -c /home/raj/Documents/oops_game/src/dsa/ComplexityAnalyzer.cpp",
+  "file": "/home/raj/Documents/oops_game/src/dsa/ComplexityAnalyzer.cpp",
+  "output": "CMakeFiles/runtime.dir/src/dsa/ComplexityAnalyzer.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/gameplay/CombatSystem.cpp.o -c /home/raj/Documents/oops_game/src/gameplay/CombatSystem.cpp",
+  "file": "/home/raj/Documents/oops_game/src/gameplay/CombatSystem.cpp",
+  "output": "CMakeFiles/runtime.dir/src/gameplay/CombatSystem.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/gameplay/PuzzleSystem.cpp.o -c /home/raj/Documents/oops_game/src/gameplay/PuzzleSystem.cpp",
+  "file": "/home/raj/Documents/oops_game/src/gameplay/PuzzleSystem.cpp",
+  "output": "CMakeFiles/runtime.dir/src/gameplay/PuzzleSystem.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/gameplay/QuestSystem.cpp.o -c /home/raj/Documents/oops_game/src/gameplay/QuestSystem.cpp",
+  "file": "/home/raj/Documents/oops_game/src/gameplay/QuestSystem.cpp",
+  "output": "CMakeFiles/runtime.dir/src/gameplay/QuestSystem.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/gameplay/ProgressionSystem.cpp.o -c /home/raj/Documents/oops_game/src/gameplay/ProgressionSystem.cpp",
+  "file": "/home/raj/Documents/oops_game/src/gameplay/ProgressionSystem.cpp",
+  "output": "CMakeFiles/runtime.dir/src/gameplay/ProgressionSystem.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/gameplay/InventorySystem.cpp.o -c /home/raj/Documents/oops_game/src/gameplay/InventorySystem.cpp",
+  "file": "/home/raj/Documents/oops_game/src/gameplay/InventorySystem.cpp",
+  "output": "CMakeFiles/runtime.dir/src/gameplay/InventorySystem.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/gameplay/MemoryDistrictScene.cpp.o -c /home/raj/Documents/oops_game/src/gameplay/MemoryDistrictScene.cpp",
+  "file": "/home/raj/Documents/oops_game/src/gameplay/MemoryDistrictScene.cpp",
+  "output": "CMakeFiles/runtime.dir/src/gameplay/MemoryDistrictScene.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/dialogue/DialogueSystem.cpp.o -c /home/raj/Documents/oops_game/src/dialogue/DialogueSystem.cpp",
+  "file": "/home/raj/Documents/oops_game/src/dialogue/DialogueSystem.cpp",
+  "output": "CMakeFiles/runtime.dir/src/dialogue/DialogueSystem.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/dialogue/DialogueNode.cpp.o -c /home/raj/Documents/oops_game/src/dialogue/DialogueNode.cpp",
+  "file": "/home/raj/Documents/oops_game/src/dialogue/DialogueNode.cpp",
+  "output": "CMakeFiles/runtime.dir/src/dialogue/DialogueNode.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/ui/UISystem.cpp.o -c /home/raj/Documents/oops_game/src/ui/UISystem.cpp",
+  "file": "/home/raj/Documents/oops_game/src/ui/UISystem.cpp",
+  "output": "CMakeFiles/runtime.dir/src/ui/UISystem.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/ui/MainMenu.cpp.o -c /home/raj/Documents/oops_game/src/ui/MainMenu.cpp",
+  "file": "/home/raj/Documents/oops_game/src/ui/MainMenu.cpp",
+  "output": "CMakeFiles/runtime.dir/src/ui/MainMenu.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/ui/DemoScene.cpp.o -c /home/raj/Documents/oops_game/src/ui/DemoScene.cpp",
+  "file": "/home/raj/Documents/oops_game/src/ui/DemoScene.cpp",
+  "output": "CMakeFiles/runtime.dir/src/ui/DemoScene.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/ui/HUD.cpp.o -c /home/raj/Documents/oops_game/src/ui/HUD.cpp",
+  "file": "/home/raj/Documents/oops_game/src/ui/HUD.cpp",
+  "output": "CMakeFiles/runtime.dir/src/ui/HUD.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/ui/DialogueUI.cpp.o -c /home/raj/Documents/oops_game/src/ui/DialogueUI.cpp",
+  "file": "/home/raj/Documents/oops_game/src/ui/DialogueUI.cpp",
+  "output": "CMakeFiles/runtime.dir/src/ui/DialogueUI.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/ui/DSAVisualizer.cpp.o -c /home/raj/Documents/oops_game/src/ui/DSAVisualizer.cpp",
+  "file": "/home/raj/Documents/oops_game/src/ui/DSAVisualizer.cpp",
+  "output": "CMakeFiles/runtime.dir/src/ui/DSAVisualizer.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/ui/MasteryScreen.cpp.o -c /home/raj/Documents/oops_game/src/ui/MasteryScreen.cpp",
+  "file": "/home/raj/Documents/oops_game/src/ui/MasteryScreen.cpp",
+  "output": "CMakeFiles/runtime.dir/src/ui/MasteryScreen.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/ui/PauseMenu.cpp.o -c /home/raj/Documents/oops_game/src/ui/PauseMenu.cpp",
+  "file": "/home/raj/Documents/oops_game/src/ui/PauseMenu.cpp",
+  "output": "CMakeFiles/runtime.dir/src/ui/PauseMenu.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/ui/SettingsMenu.cpp.o -c /home/raj/Documents/oops_game/src/ui/SettingsMenu.cpp",
+  "file": "/home/raj/Documents/oops_game/src/ui/SettingsMenu.cpp",
+  "output": "CMakeFiles/runtime.dir/src/ui/SettingsMenu.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/audio/AudioManager.cpp.o -c /home/raj/Documents/oops_game/src/audio/AudioManager.cpp",
+  "file": "/home/raj/Documents/oops_game/src/audio/AudioManager.cpp",
+  "output": "CMakeFiles/runtime.dir/src/audio/AudioManager.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/audio/MusicManager.cpp.o -c /home/raj/Documents/oops_game/src/audio/MusicManager.cpp",
+  "file": "/home/raj/Documents/oops_game/src/audio/MusicManager.cpp",
+  "output": "CMakeFiles/runtime.dir/src/audio/MusicManager.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/audio/SFXManager.cpp.o -c /home/raj/Documents/oops_game/src/audio/SFXManager.cpp",
+  "file": "/home/raj/Documents/oops_game/src/audio/SFXManager.cpp",
+  "output": "CMakeFiles/runtime.dir/src/audio/SFXManager.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/audio/VoiceManager.cpp.o -c /home/raj/Documents/oops_game/src/audio/VoiceManager.cpp",
+  "file": "/home/raj/Documents/oops_game/src/audio/VoiceManager.cpp",
+  "output": "CMakeFiles/runtime.dir/src/audio/VoiceManager.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/save/SaveManager.cpp.o -c /home/raj/Documents/oops_game/src/save/SaveManager.cpp",
+  "file": "/home/raj/Documents/oops_game/src/save/SaveManager.cpp",
+  "output": "CMakeFiles/runtime.dir/src/save/SaveManager.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/save/SaveData.cpp.o -c /home/raj/Documents/oops_game/src/save/SaveData.cpp",
+  "file": "/home/raj/Documents/oops_game/src/save/SaveData.cpp",
+  "output": "CMakeFiles/runtime.dir/src/save/SaveData.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/utils/Logger.cpp.o -c /home/raj/Documents/oops_game/src/utils/Logger.cpp",
+  "file": "/home/raj/Documents/oops_game/src/utils/Logger.cpp",
+  "output": "CMakeFiles/runtime.dir/src/utils/Logger.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/utils/Random.cpp.o -c /home/raj/Documents/oops_game/src/utils/Random.cpp",
+  "file": "/home/raj/Documents/oops_game/src/utils/Random.cpp",
+  "output": "CMakeFiles/runtime.dir/src/utils/Random.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -Wall -Wextra -Wpedantic -o CMakeFiles/runtime.dir/src/utils/MathUtils.cpp.o -c /home/raj/Documents/oops_game/src/utils/MathUtils.cpp",
+  "file": "/home/raj/Documents/oops_game/src/utils/MathUtils.cpp",
+  "output": "CMakeFiles/runtime.dir/src/utils/MathUtils.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -o CMakeFiles/test_dsa.dir/tests/dsa/test_array.cpp.o -c /home/raj/Documents/oops_game/tests/dsa/test_array.cpp",
+  "file": "/home/raj/Documents/oops_game/tests/dsa/test_array.cpp",
+  "output": "CMakeFiles/test_dsa.dir/tests/dsa/test_array.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -o CMakeFiles/test_dsa.dir/tests/dsa/test_stack.cpp.o -c /home/raj/Documents/oops_game/tests/dsa/test_stack.cpp",
+  "file": "/home/raj/Documents/oops_game/tests/dsa/test_stack.cpp",
+  "output": "CMakeFiles/test_dsa.dir/tests/dsa/test_stack.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -o CMakeFiles/test_dsa.dir/tests/dsa/test_queue.cpp.o -c /home/raj/Documents/oops_game/tests/dsa/test_queue.cpp",
+  "file": "/home/raj/Documents/oops_game/tests/dsa/test_queue.cpp",
+  "output": "CMakeFiles/test_dsa.dir/tests/dsa/test_queue.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -o CMakeFiles/test_dsa.dir/tests/dsa/test_main.cpp.o -c /home/raj/Documents/oops_game/tests/dsa/test_main.cpp",
+  "file": "/home/raj/Documents/oops_game/tests/dsa/test_main.cpp",
+  "output": "CMakeFiles/test_dsa.dir/tests/dsa/test_main.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -o CMakeFiles/test_dsa.dir/src/dsa/ArrayDS.cpp.o -c /home/raj/Documents/oops_game/src/dsa/ArrayDS.cpp",
+  "file": "/home/raj/Documents/oops_game/src/dsa/ArrayDS.cpp",
+  "output": "CMakeFiles/test_dsa.dir/src/dsa/ArrayDS.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -o CMakeFiles/test_dsa.dir/src/dsa/LinkedList.cpp.o -c /home/raj/Documents/oops_game/src/dsa/LinkedList.cpp",
+  "file": "/home/raj/Documents/oops_game/src/dsa/LinkedList.cpp",
+  "output": "CMakeFiles/test_dsa.dir/src/dsa/LinkedList.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -o CMakeFiles/test_dsa.dir/src/dsa/Stack.cpp.o -c /home/raj/Documents/oops_game/src/dsa/Stack.cpp",
+  "file": "/home/raj/Documents/oops_game/src/dsa/Stack.cpp",
+  "output": "CMakeFiles/test_dsa.dir/src/dsa/Stack.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -o CMakeFiles/test_dsa.dir/src/dsa/Queue.cpp.o -c /home/raj/Documents/oops_game/src/dsa/Queue.cpp",
+  "file": "/home/raj/Documents/oops_game/src/dsa/Queue.cpp",
+  "output": "CMakeFiles/test_dsa.dir/src/dsa/Queue.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -o CMakeFiles/test_dsa.dir/src/dsa/SearchAlgorithms.cpp.o -c /home/raj/Documents/oops_game/src/dsa/SearchAlgorithms.cpp",
+  "file": "/home/raj/Documents/oops_game/src/dsa/SearchAlgorithms.cpp",
+  "output": "CMakeFiles/test_dsa.dir/src/dsa/SearchAlgorithms.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -o CMakeFiles/test_dsa.dir/src/dsa/SortAlgorithms.cpp.o -c /home/raj/Documents/oops_game/src/dsa/SortAlgorithms.cpp",
+  "file": "/home/raj/Documents/oops_game/src/dsa/SortAlgorithms.cpp",
+  "output": "CMakeFiles/test_dsa.dir/src/dsa/SortAlgorithms.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -o CMakeFiles/test_dsa.dir/src/dsa/ComplexityAnalyzer.cpp.o -c /home/raj/Documents/oops_game/src/dsa/ComplexityAnalyzer.cpp",
+  "file": "/home/raj/Documents/oops_game/src/dsa/ComplexityAnalyzer.cpp",
+  "output": "CMakeFiles/test_dsa.dir/src/dsa/ComplexityAnalyzer.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -o CMakeFiles/test_dsa.dir/src/ui/UISystem.cpp.o -c /home/raj/Documents/oops_game/src/ui/UISystem.cpp",
+  "file": "/home/raj/Documents/oops_game/src/ui/UISystem.cpp",
+  "output": "CMakeFiles/test_dsa.dir/src/ui/UISystem.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -o CMakeFiles/test_dsa.dir/src/utils/Logger.cpp.o -c /home/raj/Documents/oops_game/src/utils/Logger.cpp",
+  "file": "/home/raj/Documents/oops_game/src/utils/Logger.cpp",
+  "output": "CMakeFiles/test_dsa.dir/src/utils/Logger.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -o CMakeFiles/test_dsa.dir/src/utils/Random.cpp.o -c /home/raj/Documents/oops_game/src/utils/Random.cpp",
+  "file": "/home/raj/Documents/oops_game/src/utils/Random.cpp",
+  "output": "CMakeFiles/test_dsa.dir/src/utils/Random.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -o CMakeFiles/test_dsa.dir/src/utils/MathUtils.cpp.o -c /home/raj/Documents/oops_game/src/utils/MathUtils.cpp",
+  "file": "/home/raj/Documents/oops_game/src/utils/MathUtils.cpp",
+  "output": "CMakeFiles/test_dsa.dir/src/utils/MathUtils.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -o CMakeFiles/test_save.dir/tests/save/test_save.cpp.o -c /home/raj/Documents/oops_game/tests/save/test_save.cpp",
+  "file": "/home/raj/Documents/oops_game/tests/save/test_save.cpp",
+  "output": "CMakeFiles/test_save.dir/tests/save/test_save.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -o CMakeFiles/test_save.dir/src/save/SaveManager.cpp.o -c /home/raj/Documents/oops_game/src/save/SaveManager.cpp",
+  "file": "/home/raj/Documents/oops_game/src/save/SaveManager.cpp",
+  "output": "CMakeFiles/test_save.dir/src/save/SaveManager.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -o CMakeFiles/test_save.dir/src/save/SaveData.cpp.o -c /home/raj/Documents/oops_game/src/save/SaveData.cpp",
+  "file": "/home/raj/Documents/oops_game/src/save/SaveData.cpp",
+  "output": "CMakeFiles/test_save.dir/src/save/SaveData.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -o CMakeFiles/test_save.dir/src/utils/Logger.cpp.o -c /home/raj/Documents/oops_game/src/utils/Logger.cpp",
+  "file": "/home/raj/Documents/oops_game/src/utils/Logger.cpp",
+  "output": "CMakeFiles/test_save.dir/src/utils/Logger.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build",
+  "command": "/usr/bin/c++ -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/nlohmann_json-src/include -std=gnu++17 -o CMakeFiles/test_save.dir/src/utils/MathUtils.cpp.o -c /home/raj/Documents/oops_game/src/utils/MathUtils.cpp",
+  "file": "/home/raj/Documents/oops_game/src/utils/MathUtils.cpp",
+  "output": "CMakeFiles/test_save.dir/src/utils/MathUtils.cpp.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib",
+  "command": "/usr/bin/cc -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -isystem /home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=gnu99 -o CMakeFiles/raylib.dir/raudio.c.o -c /home/raj/Documents/oops_game/build/_deps/raylib-src/src/raudio.c",
+  "file": "/home/raj/Documents/oops_game/build/_deps/raylib-src/src/raudio.c",
+  "output": "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib",
+  "command": "/usr/bin/cc -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -isystem /home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=gnu99 -o CMakeFiles/raylib.dir/rcore.c.o -c /home/raj/Documents/oops_game/build/_deps/raylib-src/src/rcore.c",
+  "file": "/home/raj/Documents/oops_game/build/_deps/raylib-src/src/rcore.c",
+  "output": "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rcore.c.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib",
+  "command": "/usr/bin/cc -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -isystem /home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=gnu99 -o CMakeFiles/raylib.dir/rmodels.c.o -c /home/raj/Documents/oops_game/build/_deps/raylib-src/src/rmodels.c",
+  "file": "/home/raj/Documents/oops_game/build/_deps/raylib-src/src/rmodels.c",
+  "output": "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rmodels.c.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib",
+  "command": "/usr/bin/cc -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -isystem /home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=gnu99 -o CMakeFiles/raylib.dir/rshapes.c.o -c /home/raj/Documents/oops_game/build/_deps/raylib-src/src/rshapes.c",
+  "file": "/home/raj/Documents/oops_game/build/_deps/raylib-src/src/rshapes.c",
+  "output": "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rshapes.c.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib",
+  "command": "/usr/bin/cc -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -isystem /home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=gnu99 -o CMakeFiles/raylib.dir/rtext.c.o -c /home/raj/Documents/oops_game/build/_deps/raylib-src/src/rtext.c",
+  "file": "/home/raj/Documents/oops_game/build/_deps/raylib-src/src/rtext.c",
+  "output": "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib",
+  "command": "/usr/bin/cc -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -isystem /home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=gnu99 -o CMakeFiles/raylib.dir/rtextures.c.o -c /home/raj/Documents/oops_game/build/_deps/raylib-src/src/rtextures.c",
+  "file": "/home/raj/Documents/oops_game/build/_deps/raylib-src/src/rtextures.c",
+  "output": "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtextures.c.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib",
+  "command": "/usr/bin/cc -DGRAPHICS_API_OPENGL_33 -DPLATFORM_DESKTOP -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src -isystem /home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=gnu99 -o CMakeFiles/raylib.dir/utils.c.o -c /home/raj/Documents/oops_game/build/_deps/raylib-src/src/utils.c",
+  "file": "/home/raj/Documents/oops_game/build/_deps/raylib-src/src/utils.c",
+  "output": "_deps/raylib-build/raylib/CMakeFiles/raylib.dir/utils.c.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src -I/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/context.c.o -c /home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/context.c",
+  "file": "/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/context.c",
+  "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/context.c.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src -I/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/init.c.o -c /home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/init.c",
+  "file": "/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/init.c",
+  "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/init.c.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src -I/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/input.c.o -c /home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/input.c",
+  "file": "/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/input.c",
+  "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/input.c.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src -I/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/monitor.c.o -c /home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/monitor.c",
+  "file": "/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/monitor.c",
+  "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/monitor.c.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src -I/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/platform.c.o -c /home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/platform.c",
+  "file": "/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/platform.c",
+  "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/platform.c.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src -I/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/vulkan.c.o -c /home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/vulkan.c",
+  "file": "/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/vulkan.c",
+  "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src -I/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/window.c.o -c /home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/window.c",
+  "file": "/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/window.c",
+  "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/window.c.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src -I/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/egl_context.c.o -c /home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/egl_context.c",
+  "file": "/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/egl_context.c",
+  "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src -I/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/osmesa_context.c.o -c /home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/osmesa_context.c",
+  "file": "/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/osmesa_context.c",
+  "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src -I/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/null_init.c.o -c /home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/null_init.c",
+  "file": "/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/null_init.c",
+  "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_init.c.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src -I/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/null_monitor.c.o -c /home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/null_monitor.c",
+  "file": "/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/null_monitor.c",
+  "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src -I/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/null_window.c.o -c /home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/null_window.c",
+  "file": "/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/null_window.c",
+  "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_window.c.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src -I/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/null_joystick.c.o -c /home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/null_joystick.c",
+  "file": "/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/null_joystick.c",
+  "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src -I/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/posix_module.c.o -c /home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/posix_module.c",
+  "file": "/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/posix_module.c",
+  "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_module.c.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src -I/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/posix_time.c.o -c /home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/posix_time.c",
+  "file": "/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/posix_time.c",
+  "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src -I/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/posix_thread.c.o -c /home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/posix_thread.c",
+  "file": "/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/posix_thread.c",
+  "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src -I/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/x11_init.c.o -c /home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/x11_init.c",
+  "file": "/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/x11_init.c",
+  "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/x11_init.c.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src -I/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/x11_monitor.c.o -c /home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/x11_monitor.c",
+  "file": "/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/x11_monitor.c",
+  "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src -I/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/x11_window.c.o -c /home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/x11_window.c",
+  "file": "/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/x11_window.c",
+  "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/x11_window.c.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src -I/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/xkb_unicode.c.o -c /home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/xkb_unicode.c",
+  "file": "/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/xkb_unicode.c",
+  "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src -I/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/glx_context.c.o -c /home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/glx_context.c",
+  "file": "/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/glx_context.c",
+  "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src -I/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/linux_joystick.c.o -c /home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/linux_joystick.c",
+  "file": "/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/linux_joystick.c",
+  "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o"
+},
+{
+  "directory": "/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src",
+  "command": "/usr/bin/cc -D_DEFAULT_SOURCE -D_GLFW_X11 -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/include -I/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src -I/home/raj/Documents/oops_game/build/_deps/raylib-build/raylib/external/glfw/src -fno-strict-aliasing -Werror=implicit-function-declaration -Werror=pointer-arith  -std=c99 -fPIC -Wall -o CMakeFiles/glfw.dir/posix_poll.c.o -c /home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/posix_poll.c",
+  "file": "/home/raj/Documents/oops_game/build/_deps/raylib-src/src/external/glfw/src/posix_poll.c",
+  "output": "_deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_poll.c.o"
+}
+]

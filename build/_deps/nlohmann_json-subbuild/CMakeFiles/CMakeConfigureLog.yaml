@@ -1,0 +1,69 @@
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/home/raj/.local/share/uv/tools/cmake/lib/python3.11/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
+      - "CMakeLists.txt:16 (project)"
+    mode: "program"
+    variable: "CMAKE_UNAME"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "uname"
+    candidate_directories:
+      - "/home/raj/.gemini/antigravity/bin/"
+      - "/home/raj/.config/Antigravity/bin/"
+      - "/home/raj/.config/hyde/scripts/"
+      - "/home/raj/.local/lib/hyde/"
+      - "/home/raj/.local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/usr/lib/jvm/default/bin/"
+      - "/usr/bin/site_perl/"
+      - "/usr/bin/vendor_perl/"
+      - "/usr/bin/core_perl/"
+      - "/home/raj/.local/lib/"
+      - "/bin/"
+    searched_directories:
+      - "/home/raj/.gemini/antigravity/bin/uname"
+      - "/home/raj/.config/Antigravity/bin/uname"
+      - "/home/raj/.config/hyde/scripts/uname"
+      - "/home/raj/.local/lib/hyde/uname"
+      - "/home/raj/.local/bin/uname"
+      - "/usr/local/sbin/uname"
+      - "/usr/local/bin/uname"
+    found: "/usr/bin/uname"
+    search_context:
+      ENV{PATH}:
+        - "/home/raj/.gemini/antigravity/bin"
+        - "/home/raj/.config/Antigravity/bin"
+        - "/home/raj/.config/hyde/scripts"
+        - "/home/raj/.local/lib/hyde"
+        - "/home/raj/.local/bin"
+        - "/home/raj/.local/share/../bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/lib/jvm/default/bin"
+        - "/usr/bin/site_perl"
+        - "/usr/bin/vendor_perl"
+        - "/usr/bin/core_perl"
+        - "/home/raj/.local/lib"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/raj/.local/share/uv/tools/cmake/lib/python3.11/site-packages/cmake/data/share/cmake-4.4/Modules/CMakeDetermineSystem.cmake:218 (message)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      The system is: Linux - 7.2.3-arch1-2 - x86_64
+...

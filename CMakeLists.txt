@@ -155,6 +155,8 @@ if(BUILD_TESTS)
         tests/dsa/test_array.cpp
         tests/dsa/test_stack.cpp
         tests/dsa/test_queue.cpp
+        tests/dsa/test_linked_list.cpp
+        tests/dsa/test_algorithms.cpp
         tests/dsa/test_main.cpp
         ${DSA_TEST_SOURCES}
     )

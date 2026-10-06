@@ -4,6 +4,8 @@
 void runArrayTests();
 void runStackTests();
 void runQueueTests();
+void runLinkedListTests();
+void runAlgorithmTests();
 
 int main() {
     std::cout << "========================================" << std::endl;
@@ -14,6 +16,8 @@ int main() {
         runArrayTests();
         runStackTests();
         runQueueTests();
+        runLinkedListTests();
+        runAlgorithmTests();
         std::cout << "\n>>> ALL DSA TESTS PASSED SUCCESSFULLY! <<<\n" << std::endl;
         return 0;
     } catch (const std::exception& e) {

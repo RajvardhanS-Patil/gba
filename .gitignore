@@ -1,0 +1,24 @@
+# Build artifacts & CMake
+build/
+bin/
+obj/
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+runtime
+test_dsa
+test_save
+
+# Logs
+*.log
+game.log
+
+# IDE & OS
+.vscode/
+.idea/
+.cache/
+.DS_Store

@@ -1,8 +1,3 @@
-// ═══════════════════════════════════════════════════════════════════════════
-// RUNTIME: The Last Algorithm
-// SFXManager — Implementation
-// ═══════════════════════════════════════════════════════════════════════════
-
 #include "audio/SFXManager.h"
 #include "utils/Logger.h"
 #include <filesystem>
@@ -39,8 +34,12 @@ void SFXManager::play(const std::string& id) {
 
     auto it = sounds_.find(id);
     if (it == sounds_.end()) {
-        LOG_WARN("SFX not found: " + id);
-        return;
+        std::string fallbackPath = "assets/sfx/" + id + ".wav";
+        if (std::filesystem::exists(fallbackPath)) {
+            preload(id, fallbackPath);
+            it = sounds_.find(id);
+        }
+        if (it == sounds_.end()) return;
     }
 
     if (!it->second.loaded) return;
@@ -55,8 +54,12 @@ void SFXManager::play(const std::string& id, float pitch) {
 
     auto it = sounds_.find(id);
     if (it == sounds_.end()) {
-        LOG_WARN("SFX not found: " + id);
-        return;
+        std::string fallbackPath = "assets/sfx/" + id + ".wav";
+        if (std::filesystem::exists(fallbackPath)) {
+            preload(id, fallbackPath);
+            it = sounds_.find(id);
+        }
+        if (it == sounds_.end()) return;
     }
 
     if (!it->second.loaded) return;
@@ -68,7 +71,13 @@ void SFXManager::play(const std::string& id, float pitch) {
 }
 
 void SFXManager::playFile(const std::string& filepath) {
-    AudioManager::instance().playSFX(filepath);
+    if (!AudioManager::instance().isInitialized()) return;
+    if (!std::filesystem::exists(filepath)) return;
+
+    Sound s = LoadSound(filepath.c_str());
+    float vol = AudioManager::instance().getEffectiveSFX();
+    SetSoundVolume(s, vol);
+    PlaySound(s);
 }
 
 void SFXManager::stop(const std::string& id) {
@@ -87,11 +96,11 @@ bool SFXManager::isPlaying(const std::string& id) const {
 }
 
 void SFXManager::unloadAll() {
-    for (auto& [id, entry] : sounds_) {
-        if (entry.loaded) {
-            UnloadSound(entry.sound);
+    for (auto& pair : sounds_) {
+        if (pair.second.loaded) {
+            UnloadSound(pair.second.sound);
+            pair.second.loaded = false;
         }
     }
     sounds_.clear();
-    LOG_INFO("Unloaded all SFX");
 }

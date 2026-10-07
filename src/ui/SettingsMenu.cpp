@@ -1,34 +1,51 @@
 #include "SettingsMenu.h"
+#include "MainMenu.h"
+#include "core/Game.h"
+#include "audio/AudioManager.h"
+#include "audio/SFXManager.h"
 #include "raylib.h"
 
 extern const Color CYBER_CYAN;
 extern const Color CYBER_DARK;
+extern const Color CYBER_PANEL;
+extern const Color CYBER_TEXT;
+extern const Color CYBER_DIM;
+extern const Color CYBER_SUCCESS;
 
 SettingsMenu::SettingsMenu() {
+    float cx = 1280/2.0f - 200.0f;
+
     masterVol_ = std::make_unique<UISystem::Slider>();
-    masterVol_->bounds = {500, 200, 300, 20}; masterVol_->label = "Master Volume"; masterVol_->value = 1.0f;
+    masterVol_->bounds = {cx, 160, 400, 18}; masterVol_->label = "Master Volume"; masterVol_->value = AudioManager::instance().getMasterVolume();
     
     musicVol_ = std::make_unique<UISystem::Slider>();
-    musicVol_->bounds = {500, 270, 300, 20}; musicVol_->label = "Music Volume"; musicVol_->value = 0.8f;
+    musicVol_->bounds = {cx, 230, 400, 18}; musicVol_->label = "Music Volume"; musicVol_->value = AudioManager::instance().getMusicVolume();
     
     sfxVol_ = std::make_unique<UISystem::Slider>();
-    sfxVol_->bounds = {500, 340, 300, 20}; sfxVol_->label = "SFX Volume"; sfxVol_->value = 1.0f;
+    sfxVol_->bounds = {cx, 300, 400, 18}; sfxVol_->label = "SFX Volume"; sfxVol_->value = AudioManager::instance().getSFXVolume();
     
     textSpeed_ = std::make_unique<UISystem::Slider>();
-    textSpeed_->bounds = {500, 410, 300, 20}; textSpeed_->label = "Text Speed"; textSpeed_->value = 0.5f;
+    textSpeed_->bounds = {cx, 370, 400, 18}; textSpeed_->label = "Terminal Baud Rate / Text Speed"; textSpeed_->value = 0.8f;
 
-    fsToggle_ = std::make_unique<UISystem::Button>((Rectangle){500, 480, 150, 40}, "FULLSCREEN: OFF", [this](){
+    fsToggle_ = std::make_unique<UISystem::Button>(Rectangle{cx, 440, 190, 40}, "FULLSCREEN: OFF", [this]() {
         isFs_ = !isFs_;
-        fsToggle_ = std::make_unique<UISystem::Button>((Rectangle){500, 480, 150, 40}, isFs_ ? "FULLSCREEN: ON" : "FULLSCREEN: OFF", [](){});
+        ToggleFullscreen();
     });
     
-    vsyncToggle_ = std::make_unique<UISystem::Button>((Rectangle){670, 480, 150, 40}, "VSYNC: ON", [this](){
+    vsyncToggle_ = std::make_unique<UISystem::Button>(Rectangle{cx + 210, 440, 190, 40}, "VSYNC: ENABLED", [this]() {
         isVsync_ = !isVsync_;
-        vsyncToggle_ = std::make_unique<UISystem::Button>((Rectangle){670, 480, 150, 40}, isVsync_ ? "VSYNC: ON" : "VSYNC: OFF", [](){});
     });
 
-    applyBtn_ = std::make_unique<UISystem::Button>((Rectangle){500, 600, 140, 50}, "APPLY", [](){});
-    backBtn_ = std::make_unique<UISystem::Button>((Rectangle){660, 600, 140, 50}, "BACK", [](){});
+    applyBtn_ = std::make_unique<UISystem::Button>(Rectangle{cx, 540, 190, 45}, "APPLY CHANGES", [this]() {
+        AudioManager::instance().setMasterVolume(masterVol_->getValue());
+        AudioManager::instance().setMusicVolume(musicVol_->getValue());
+        AudioManager::instance().setSFXVolume(sfxVol_->getValue());
+        SFXManager::instance().play("success");
+    });
+
+    backBtn_ = std::make_unique<UISystem::Button>(Rectangle{cx + 210, 540, 190, 45}, "RETURN [ESC]", []() {
+        Game::getSceneManager().changeScene(std::make_unique<MainMenu>());
+    });
 }
 
 void SettingsMenu::onEnter() {}
@@ -39,6 +56,13 @@ void SettingsMenu::update(float dt) {
     musicVol_->update();
     sfxVol_->update();
     textSpeed_->update();
+
+    if (IsKeyPressed(KEY_ESCAPE)) {
+        SFXManager::instance().play("click");
+        Game::getSceneManager().changeScene(std::make_unique<MainMenu>());
+        return;
+    }
+
     fsToggle_->update();
     vsyncToggle_->update();
     applyBtn_->update();
@@ -47,8 +71,18 @@ void SettingsMenu::update(float dt) {
 
 void SettingsMenu::draw() {
     ClearBackground(CYBER_DARK);
-    DrawText("SETTINGS", 1280/2 - MeasureText("SETTINGS", 50)/2, 50, 50, CYBER_CYAN);
+
+    // Subtle grid
+    for (int i = 0; i < 1280; i += 40) DrawLine(i, 0, i, 720, Color{255, 255, 255, 8});
+    for (int i = 0; i < 720; i += 40) DrawLine(0, i, 1280, i, Color{255, 255, 255, 8});
+
+    DrawText("SYSTEM CONFIGURATION", 1280/2 - MeasureText("SYSTEM CONFIGURATION", 36)/2, 55, 36, CYBER_CYAN);
     
+    // Panel container
+    float cx = 1280/2.0f - 240.0f;
+    DrawRectangleRounded({cx, 120, 480, 500}, 0.08f, 8, CYBER_PANEL);
+    DrawRectangleRoundedLinesEx({cx, 120, 480, 500}, 0.08f, 8, 1.5f, Color{45, 60, 85, 255});
+
     masterVol_->draw();
     musicVol_->draw();
     sfxVol_->draw();

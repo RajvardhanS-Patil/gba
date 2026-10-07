@@ -1,10 +1,11 @@
 #include "UISystem.h"
+#include "audio/SFXManager.h"
 
 const Color CYBER_CYAN    = {0, 229, 255, 255};
 const Color CYBER_VIOLET  = {124, 77, 255, 255};
 const Color CYBER_MAGENTA = {255, 64, 129, 255};
 const Color CYBER_DARK    = {10, 14, 23, 255};
-const Color CYBER_PANEL   = {26, 30, 46, 255};
+const Color CYBER_PANEL   = {24, 32, 48, 255};
 const Color CYBER_TEXT    = {220, 230, 255, 255};
 const Color CYBER_DIM     = {100, 110, 140, 255};
 const Color CYBER_SUCCESS = {0, 230, 118, 255};
@@ -25,11 +26,19 @@ void Button::update() {
     if (state_ == ButtonState::DISABLED) return;
     Vector2 mousePt = GetMousePosition();
     bool hovered = CheckCollisionPointRec(mousePt, bounds_);
+    
     if (hovered) {
+        if (state_ == ButtonState::IDLE) {
+            SFXManager::instance().play("hover");
+        }
+
         if (IsMouseButtonDown(MOUSE_LEFT_BUTTON)) {
             state_ = ButtonState::PRESSED;
         } else if (IsMouseButtonReleased(MOUSE_LEFT_BUTTON)) {
-            if (state_ == ButtonState::PRESSED && onClick_) onClick_();
+            if (state_ == ButtonState::PRESSED && onClick_) {
+                SFXManager::instance().play("click");
+                onClick_();
+            }
             state_ = ButtonState::HOVERED;
         } else {
             state_ = ButtonState::HOVERED;
@@ -39,11 +48,11 @@ void Button::update() {
     }
     
     float dt = GetFrameTime();
-    if (state_ == ButtonState::HOVERED) hoverAnim_ += dt * 5.0f;
-    else hoverAnim_ -= dt * 5.0f;
+    if (state_ == ButtonState::HOVERED) hoverAnim_ += dt * 6.0f;
+    else hoverAnim_ -= dt * 6.0f;
     
-    if (state_ == ButtonState::PRESSED) pressAnim_ += dt * 10.0f;
-    else pressAnim_ -= dt * 10.0f;
+    if (state_ == ButtonState::PRESSED) pressAnim_ += dt * 12.0f;
+    else pressAnim_ -= dt * 12.0f;
     
     if (hoverAnim_ > 1.0f) hoverAnim_ = 1.0f;
     if (hoverAnim_ < 0.0f) hoverAnim_ = 0.0f;
@@ -60,25 +69,25 @@ void Button::draw() {
     }
     
     Color bg = CYBER_PANEL;
-    Color border = CYBER_DIM;
+    Color border = Color{50, 70, 100, 255};
     Color txt = CYBER_TEXT;
     
     if (state_ == ButtonState::DISABLED) {
         txt = CYBER_DIM; border.a = 100; bg.a = 150;
     } else {
         if (hoverAnim_ > 0) {
-            border = { (unsigned char)(CYBER_DIM.r + (CYBER_CYAN.r - CYBER_DIM.r)*hoverAnim_),
-                       (unsigned char)(CYBER_DIM.g + (CYBER_CYAN.g - CYBER_DIM.g)*hoverAnim_),
-                       (unsigned char)(CYBER_DIM.b + (CYBER_CYAN.b - CYBER_DIM.b)*hoverAnim_), 255 };
+            border = { (unsigned char)(50 + (CYBER_CYAN.r - 50)*hoverAnim_),
+                       (unsigned char)(70 + (CYBER_CYAN.g - 70)*hoverAnim_),
+                       (unsigned char)(100 + (CYBER_CYAN.b - 100)*hoverAnim_), 255 };
             bg = { (unsigned char)(CYBER_PANEL.r + 20*hoverAnim_), (unsigned char)(CYBER_PANEL.g + 20*hoverAnim_), (unsigned char)(CYBER_PANEL.b + 20*hoverAnim_), 255 };
-            drawGlow(drawBounds, border, hoverAnim_ * 0.3f);
+            drawGlow(drawBounds, border, hoverAnim_ * 0.35f);
         }
     }
 
     DrawRectangleRounded(drawBounds, 0.2f, 8, bg);
     DrawRectangleRoundedLinesEx(drawBounds, 0.2f, 8, 2.0f, border);
     
-    int fontSize = static_cast<int>(drawBounds.height * 0.4f);
+    int fontSize = static_cast<int>(drawBounds.height * 0.42f);
     int tw = MeasureText(text_.c_str(), fontSize);
     DrawText(text_.c_str(), static_cast<int>(drawBounds.x + drawBounds.width/2 - tw/2), static_cast<int>(drawBounds.y + drawBounds.height/2 - fontSize/2), fontSize, txt);
 }

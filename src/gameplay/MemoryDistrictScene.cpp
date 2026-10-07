@@ -4,8 +4,7 @@
 #include "ui/MainMenu.h"
 #include "ui/PauseMenu.h"
 #include "audio/AudioManager.h"
-#include "audio/MusicManager.h"
-#include "audio/VoiceManager.h"
+#include "audio/SFXManager.h"
 #include "utils/Logger.h"
 #include "utils/MathUtils.h"
 #include <cmath>
@@ -18,14 +17,14 @@ void MemoryDistrictScene::initLevel() {
     LOG_INFO("Initializing Memory District level...");
 
     // Setup player
-    player_ = std::make_unique<Player>(200.0f, 300.0f);
+    player_ = std::make_unique<Player>(200.0f, 330.0f);
     world_.setPlayer(player_.get());
 
     // Setup Nova companion NPC
-    novaNPC_ = std::make_unique<NPC>("nova", "Nova", 260.0f, 300.0f, "ch1_nova_intro_001");
+    novaNPC_ = std::make_unique<NPC>("nova", "Nova", 260.0f, 320.0f, "ch1_nova_intro_001");
 
     // Setup enemy (spawns in combat area)
-    memoryEater_ = std::make_unique<Enemy>("memory_eater", "Memory Eater", 800.0f, 300.0f, 100, 15, "array_search");
+    memoryEater_ = std::make_unique<Enemy>("memory_eater", "Memory Eater", 820.0f, 330.0f, 100, 15, "array_search");
 
     // Build the room tiles
     nlohmann::json roomJson;
@@ -44,9 +43,9 @@ void MemoryDistrictScene::initLevel() {
     }
 
     // Add decorative structures & barriers
-    for (int x = 12; x < 28; ++x) {
-        map[6][x] = (x % 3 == 0) ? 2 : 1;
-        map[18][x] = (x % 3 == 0) ? 2 : 1;
+    for (int x = 10; x < 30; ++x) {
+        map[5][x] = (x % 3 == 0) ? 2 : 1;
+        map[19][x] = (x % 3 == 0) ? 2 : 1;
     }
 
     roomJson["map"] = map;
@@ -54,12 +53,12 @@ void MemoryDistrictScene::initLevel() {
 
     // Add Memory Node interactables in an Array sequence (indices 0..7)
     for (int i = 0; i < 8; ++i) {
-        float nx = 350.0f + i * 85.0f;
-        float ny = 300.0f;
+        float nx = 360.0f + i * 84.0f;
+        float ny = 310.0f;
         auto node = std::make_unique<Interactable>(
             "Node [" + std::to_string(i) + "]",
             "MEMORY_NODE",
-            nx, ny, 60.0f, 60.0f
+            nx, ny, 48.0f, 48.0f
         );
         world_.getCurrentRoom()->addInteractable(std::move(node));
         // Fill our internal ArrayDS structure with memory values
@@ -119,6 +118,7 @@ void MemoryDistrictScene::checkInteractions() {
     if (novaNPC_->isInRange(playerPos)) {
         hud_.showInteractionPrompt(true);
         if (IsKeyPressed(KEY_E)) {
+            SFXManager::instance().play("scan");
             triggerDialogue(novaNPC_->getDialogueId());
         }
         return;
@@ -128,15 +128,16 @@ void MemoryDistrictScene::checkInteractions() {
     auto room = world_.getCurrentRoom();
     if (room) {
         for (int i = 0; i < 8; ++i) {
-            float nx = 350.0f + i * 85.0f;
-            float ny = 300.0f;
-            Vector2 nodeCenter = {nx + 30.0f, ny + 30.0f};
+            float nx = 360.0f + i * 84.0f;
+            float ny = 310.0f;
+            Vector2 nodeCenter = {nx + 24.0f, ny + 24.0f};
             if (MathUtils::distance(playerPos, nodeCenter) < 55.0f) {
                 hud_.showInteractionPrompt(true);
                 if (IsKeyPressed(KEY_E)) {
                     memoryArray_.setHighlight(i);
                     if (i == targetCorruptedIndex_ && !memoryNodeFound_) {
                         memoryNodeFound_ = true;
+                        SFXManager::instance().play("success");
                         progressionSystem_.recordSuccess("Array");
                         progressionSystem_.recordSuccess("Linear Search");
                         questSystem_.completeObjective("ch1_main", 1);
@@ -144,7 +145,8 @@ void MemoryDistrictScene::checkInteractions() {
                         bannerTimer_ = 4.0f;
                         triggerDialogue("ch1_memory_found");
                     } else if (!memoryNodeFound_) {
-                        bannerText_ = "Checking Node [" + std::to_string(i) + "]... Value normal.";
+                        SFXManager::instance().play("scan");
+                        bannerText_ = "Scanning Node [" + std::to_string(i) + "]... Value normal.";
                         bannerTimer_ = 2.0f;
                     }
                 }
@@ -162,11 +164,13 @@ void MemoryDistrictScene::update(float dt) {
     // Toggle architecture inspector (viva mode)
     if (IsKeyPressed(KEY_F1) || IsKeyPressed(KEY_V)) {
         showArchitectureInspector_ = !showArchitectureInspector_;
+        SFXManager::instance().play("click");
     }
 
     // Toggle visualizer panel
     if (IsKeyPressed(KEY_TAB)) {
         showVisualizer_ = !showVisualizer_;
+        SFXManager::instance().play("click");
     }
 
     // Pause menu
@@ -199,6 +203,7 @@ void MemoryDistrictScene::update(float dt) {
                         // Check if dialogue ended with specific triggers
                         if (memoryNodeFound_ && !arrayCoreUnlocked_) {
                             arrayCoreUnlocked_ = true;
+                            SFXManager::instance().play("success");
                             hud_.setAbility("ARRAY CORE");
                             inventorySystem_.addItem({"ARRAY_CORE", "Array Core", "Direct indexing ability (O(1) access).", "core_array", 1});
                             // Next trigger enemy encounter
@@ -228,16 +233,23 @@ void MemoryDistrictScene::update(float dt) {
 
         case State::COMBAT: {
             combatSystem_.update(dt);
-            // Simulate DSA combat choice: Press [1] for Array Linear Scan
+            // Simulate DSA combat choice: Press [1] for Array Direct Access
             if (combatSystem_.getState() == CombatState::PLAYER_TURN) {
                 if (IsKeyPressed(KEY_ONE) || IsKeyPressed(KEY_ENTER)) {
+                    SFXManager::instance().play("hit");
                     combatSystem_.playerAttack(50);
-                    bannerText_ = "ARRAY SCAN: Weakness targeted at Index 0!";
+                    bannerText_ = "ARRAY ACCESS: Weakness dereferenced at Index 0!";
                     bannerTimer_ = 2.5f;
+                } else if (IsKeyPressed(KEY_SPACE)) {
+                    SFXManager::instance().play("hit");
+                    combatSystem_.playerAttack(25);
+                    bannerText_ = "LINEAR SCAN: Sequentially attacked node!";
+                    bannerTimer_ = 2.0f;
                 }
             }
             if (combatSystem_.getState() == CombatState::VICTORY) {
                 enemyDefeated_ = true;
+                SFXManager::instance().play("success");
                 questSystem_.completeObjective("ch1_main", 2);
                 progressionSystem_.recordSuccess("Array");
                 triggerDialogue("ch1_victory");
@@ -297,10 +309,10 @@ void MemoryDistrictScene::draw() {
 
     // Draw On-Screen Banners
     if (bannerTimer_ > 0.0f) {
-        int tw = MeasureText(bannerText_.c_str(), 20);
-        DrawRectangle(1280/2 - tw/2 - 20, 180, tw + 40, 40, CYBER_PANEL);
-        DrawRectangleLines(1280/2 - tw/2 - 20, 180, tw + 40, 40, CYBER_CYAN);
-        DrawText(bannerText_.c_str(), 1280/2 - tw/2, 190, 20, CYBER_CYAN);
+        int tw = MeasureText(bannerText_.c_str(), 18);
+        DrawRectangle(1280/2 - tw/2 - 24, 180, tw + 48, 44, CYBER_PANEL);
+        DrawRectangleLines(1280/2 - tw/2 - 24, 180, tw + 48, 44, CYBER_CYAN);
+        DrawText(bannerText_.c_str(), 1280/2 - tw/2, 192, 18, CYBER_CYAN);
     }
 
     // Draw Dialogue if active
@@ -317,12 +329,12 @@ void MemoryDistrictScene::draw() {
 
     // Draw Chapter Completion Screen
     if (state_ == State::CHAPTER_COMPLETE) {
-        DrawRectangle(0, 0, 1280, 720, Color{10, 14, 23, 230});
-        DrawText("CHAPTER 1 COMPLETE", 1280/2 - MeasureText("CHAPTER 1 COMPLETE", 40)/2, 200, 40, CYBER_SUCCESS);
-        DrawText("ARRAY CORE ACQUIRED", 1280/2 - MeasureText("ARRAY CORE ACQUIRED", 25)/2, 270, 25, CYBER_CYAN);
-        DrawText("Mastery: ARRAY (100%) | LINEAR SEARCH (100%)", 1280/2 - MeasureText("Mastery: ARRAY (100%) | LINEAR SEARCH (100%)", 20)/2, 330, 20, CYBER_TEXT);
-        DrawText("Access: O(1) by Index | Search: O(n) Unsorted", 1280/2 - MeasureText("Access: O(1) by Index | Search: O(n) Unsorted", 20)/2, 370, 20, CYBER_DIM);
-        DrawText("Press [SPACE] or [ENTER] to Return to Menu", 1280/2 - MeasureText("Press [SPACE] or [ENTER] to Return to Menu", 20)/2, 500, 20, CYBER_TEXT);
+        DrawRectangle(0, 0, 1280, 720, Color{10, 14, 23, 235});
+        DrawText("CHAPTER 1 COMPLETE", 1280/2 - MeasureText("CHAPTER 1 COMPLETE", 40)/2, 180, 40, CYBER_SUCCESS);
+        DrawText("ARRAY CORE ACQUIRED", 1280/2 - MeasureText("ARRAY CORE ACQUIRED", 25)/2, 250, 25, CYBER_CYAN);
+        DrawText("Mastery: ARRAY (100%) | LINEAR SEARCH (100%)", 1280/2 - MeasureText("Mastery: ARRAY (100%) | LINEAR SEARCH (100%)", 20)/2, 310, 20, CYBER_TEXT);
+        DrawText("Access: O(1) by Index | Search: O(n) Unsorted", 1280/2 - MeasureText("Access: O(1) by Index | Search: O(n) Unsorted", 20)/2, 350, 20, CYBER_DIM);
+        DrawText("Press [SPACE] or [ENTER] to Return to Menu", 1280/2 - MeasureText("Press [SPACE] or [ENTER] to Return to Menu", 20)/2, 480, 20, CYBER_TEXT);
     }
 
     // Draw Visualizer overlay

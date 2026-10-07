@@ -69,3 +69,9 @@ void SceneManager::draw() {
         DrawRectangle(0, 0, GetScreenWidth(), GetScreenHeight(), Fade(BLACK, alpha));
     }
 }
+
+void SceneManager::drawScreenOverlay() {
+    if (!scenes.empty()) {
+        scenes.back()->drawScreenOverlay();
+    }
+}

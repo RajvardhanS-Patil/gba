@@ -37,6 +37,7 @@ set(RUNTIME_SOURCES
 
     # Core
     src/core/Game.cpp
+    src/core/GBAEngine.cpp
     src/core/SceneManager.cpp
     src/core/EventBus.cpp
     src/core/TimeManager.cpp
@@ -53,6 +54,7 @@ set(RUNTIME_SOURCES
     src/world/World.cpp
     src/world/Room.cpp
     src/world/Interactable.cpp
+    src/world/Tilemap.cpp
 
     # DSA
     src/dsa/ArrayDS.cpp
@@ -70,6 +72,8 @@ set(RUNTIME_SOURCES
     src/gameplay/ProgressionSystem.cpp
     src/gameplay/InventorySystem.cpp
     src/gameplay/MemoryDistrictScene.cpp
+    src/gameplay/GBABattleScene.cpp
+    src/gameplay/GBAOverworldScene.cpp
 
     # Dialogue
     src/dialogue/DialogueSystem.cpp
@@ -85,6 +89,10 @@ set(RUNTIME_SOURCES
     src/ui/MasteryScreen.cpp
     src/ui/PauseMenu.cpp
     src/ui/SettingsMenu.cpp
+    src/ui/GBADialogueUI.cpp
+    src/ui/GBAMainMenu.cpp
+    src/ui/CodedexChallengeUI.cpp
+    src/ui/CodedexCodeEditorUI.cpp
 
     # Audio
     src/audio/AudioManager.cpp
@@ -146,6 +154,8 @@ if(BUILD_TESTS)
         src/dsa/SortAlgorithms.cpp
         src/dsa/ComplexityAnalyzer.cpp
         src/ui/UISystem.cpp
+        src/audio/SFXManager.cpp
+        src/audio/AudioManager.cpp
         src/utils/Logger.cpp
         src/utils/Random.cpp
         src/utils/MathUtils.cpp

@@ -1,6 +1,9 @@
 #include "Game.h"
 #include "Config.h"
-#include "ui/MainMenu.h"
+#include "GBAEngine.h"
+#include "ui/GBAMainMenu.h"
+#include "audio/AudioManager.h"
+#include "audio/MusicManager.h"
 #include <raylib.h>
 #include "../utils/Logger.h"
 
@@ -17,22 +20,22 @@ Game::~Game() {
 }
 
 void Game::init() {
-    LOG_INFO("Initializing Game...");
+    LOG_INFO("Initializing GBA Handheld Game Engine...");
     Config& config = Config::getInstance();
     config.load("data/config.json");
 
-    if (config.isFullscreen()) {
-        SetConfigFlags(FLAG_FULLSCREEN_MODE);
-    }
-
-    InitWindow(config.getWindowWidth(), config.getWindowHeight(), "RUNTIME: The Last Algorithm");
-    SetTargetFPS(config.getTargetFPS());
+    int scale = 4; // 240x160 * 4 = 960x640 window
+    InitWindow(GBA_SCREEN_WIDTH * scale, GBA_SCREEN_HEIGHT * scale, "RUNTIME: The Last Algorithm [GBA]");
+    SetExitKey(KEY_NULL); // Prevent ESC from closing the entire game window
+    SetTargetFPS(60);
     
-    InitAudioDevice();
+    AudioManager::instance().init();
     SetMasterVolume(config.getMasterVolume());
 
-    LOG_INFO("Pushing MainMenu scene.");
-    sceneManager.changeScene(std::make_unique<MainMenu>());
+    GBAEngine::instance().init(scale);
+
+    LOG_INFO("Launching GBA Main Menu...");
+    sceneManager.changeScene(std::make_unique<GBAMainMenu>());
 }
 
 void Game::run() {
@@ -40,18 +43,24 @@ void Game::run() {
         timeManager.update();
         float dt = timeManager.getDeltaTime();
         
+        MusicManager::instance().update(dt);
         sceneManager.update(dt);
         
-        BeginDrawing();
-        ClearBackground(RAYWHITE);
+        // Render scene to native 240x160 GBA target
+        GBAEngine::instance().beginFrame();
         sceneManager.draw();
-        EndDrawing();
+        
+        // Upscale with nearest-neighbor point filter to window, then draw high-res overlay
+        GBAEngine::instance().endFrame([this]() {
+            sceneManager.drawScreenOverlay();
+        });
     }
 }
 
 void Game::shutdown() {
-    LOG_INFO("Shutting down game...");
-    CloseAudioDevice();
+    LOG_INFO("Shutting down GBA game...");
+    GBAEngine::instance().shutdown();
+    AudioManager::instance().shutdown();
     CloseWindow();
 }
 

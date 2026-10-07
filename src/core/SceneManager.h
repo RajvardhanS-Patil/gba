@@ -10,6 +10,7 @@ public:
     virtual void onExit() = 0;
     virtual void update(float dt) = 0;
     virtual void draw() = 0;
+    virtual void drawScreenOverlay() {}
     virtual std::string getName() const = 0;
 };
 
@@ -24,6 +25,7 @@ public:
 
     void update(float dt);
     void draw();
+    void drawScreenOverlay();
 
 private:
     std::vector<std::unique_ptr<IScene>> scenes;
